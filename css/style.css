@@ -11,19 +11,19 @@ body{
     align-items: center;
     margin-top: 8rem;
 }
-#display{
+#display,
+#current-operation{
     grid-column: 1 / -1;
     background-color: #b2b9b7;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
-    padding: 5px;
     font-size: 5.5em;
     font-weight: initial;
     text-shadow: 1.3px 1.3px #383838;
-    margin: 5px;
 }
+
 .calc-container{
     background-color: black;
     display: grid;
