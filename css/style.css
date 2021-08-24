@@ -32,8 +32,11 @@ body{
     font-size: 3.5em;
     font-weight: initial;
     text-shadow: 1px 1px #383838;
+    padding: .5rem;
 }
-
+#display{
+    margin-bottom: 1rem;
+}
 .calc-container{
     background-color: black;
     display: grid;
