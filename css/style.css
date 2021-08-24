@@ -11,6 +11,16 @@ body{
     align-items: center;
     margin-top: 8rem;
 }
+.screen{
+    padding: 10px 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: var(--screen);
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
 #display,
 #current-operation{
     grid-column: 1 / -1;
@@ -19,20 +29,21 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
-    font-size: 5.5em;
+    font-size: 3.5em;
     font-weight: initial;
-    text-shadow: 1.3px 1.3px #383838;
+    text-shadow: 1px 1px #383838;
 }
 
 .calc-container{
     background-color: black;
     display: grid;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
-    gap: 2px;
+    grid-template-rows: minmax(100px, auto) repeat(6, 80px);
     padding: 0.6rem;
     border-radius: 10px;
 }
+
+
 .change{
     background-color: rgb(255, 55, 55);
 }
@@ -44,6 +55,13 @@ body{
 }
 button{
     font-size: 25px;
+    margin: 0.06rem;
+    border: 1px solid rgb(214, 214, 214);
+}
+button:hover{
+    transition: all ease-in .2s;
+    color: white;
+    background-color: transparent;
 }
 #zero{
     grid-column: span 2;
